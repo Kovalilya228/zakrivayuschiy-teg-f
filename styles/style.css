@@ -172,7 +172,7 @@
   }
 }
 
-.main {
+.cards__list {
   display: flex;
   flex-direction: column;
   gap: 50.5px;
@@ -196,22 +196,25 @@
   font-size: 18px;
 }
 
-.card__image {
-  min-height: 375px;
-  max-height: 100vh;
-  background-image: url(../images/371x371bus.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+.card__image-block {
+  position: relative;
+  min-height: 371px;
+  max-height: 700px;
   border-top: 2px solid var(--accent-color);
   border-bottom: 2px solid var(--accent-color);
-  position: relative;
+  overflow: hidden;
   display: flex;
-  justify-content: end;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__image {
+  height: 100%;
+  width: 100%;
 }
 
 .card__image-label {
-  position: relative;
+  position: absolute;
   display: block;
   top: 23px;
   right: 13px;
@@ -383,16 +386,16 @@ button:focus {
     min-height: 368px;
   }
 
-  .main {
+  .cards__list {
     gap: 49.5px;
   }
-
-  .card__image {
-    min-height: 700px;
-    background-image: url(../images/696x696bus.png);
+  
+  .card__description {
+    margin: 26px 25px 28px;
   }
 
   .card__image-label {
+    top: 25px;
     right: 25px;
   }
 
@@ -452,13 +455,19 @@ dialog::backdrop {
   max-width: clamp(12.25rem, 11.414rem + 3.568vw, 14.625rem);
 }
 
+.dialog__button-block {
+  position: relative;
+  height: 38px;
+}
+
 .dialog__button {
+  height: 100%;
+  width: 100%;
   background-color: var(--bg-color);
   position: relative;
   overflow: hidden;
   border: 2px solid var(--accent-color);
   text-transform: uppercase;
-  height: 38px;
 }
 
 .dialog__button:focus-visible {
@@ -575,30 +584,30 @@ dialog::backdrop {
 
 /* _____________________________________________FILTERS_______________________ */
 
-.main :nth-child(2) .card__image {
+.cards__list :nth-child(1) .card__image {
   filter: grayscale(70%);
 }
 
-.main :nth-child(3) .card__image {
+.cards__list :nth-child(3) .card__image {
   filter: saturate(1000%);
 }
 
-.main :nth-child(4) .card__image {
+.cards__list :nth-child(4) .card__image {
   filter: brightness(150%);
 }
 
-.main :nth-child(5) .card__image {
+.cards__list :nth-child(5) .card__image {
   filter: invert(1);
 }
 
-.main :nth-child(6) .card__image {
+.cards__list :nth-child(6) .card__image {
   filter: sepia(70%);
 }
 
-.main :nth-child(7) .card__image {
+.cards__list :nth-child(7) .card__image {
   filter: blur(0.3rem);
 }
 
-.main :nth-child(8) .card__image {
+.cards__list :nth-child(8) .card__image {
   filter: sepia(20%) blur(0.1rem) brightness(150%);
 }
