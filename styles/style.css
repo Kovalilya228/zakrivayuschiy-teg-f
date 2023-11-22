@@ -80,6 +80,7 @@
   text-transform: uppercase;
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
 .theme-menu__button:hover {
@@ -194,14 +195,14 @@
 } 
 
 .card__description {
-  margin: 26px 25px 28px;
+  margin: 26px 25px 24px;
   color: var(--accent-color);
   font-size: 18px;
   line-height: 116.667%;
 }
 
-.less-margin {
-  margin-bottom: 24px;
+p:not(:last-of-type).card__description {
+  margin-bottom: 28px;
 }
 
 .like-buttons {
