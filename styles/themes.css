@@ -4,3 +4,38 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+
+@media (prefers-color-scheme: dark) {
+    :root.theme-dark {
+        --card-title-font-weight: 785;
+        --card-text-font-weight: 465;
+        --bg-color: #000000;
+        --accent-color: #00CC14;
+        --bg-image: repeating-linear-gradient(90deg, #000000 0px 2px, rgba(0 0 0 / .0) 2px 4px),
+        repeating-linear-gradient(#000000 0px 2px, rgba(0 0 0 / .0) 2px 4px),
+        linear-gradient(#007f0c, #004306);
+        --button-color: #00cc14;
+    }
+}
+  
+:root.theme-dark {
+    --card-title-font-weight: 785;
+    --card-text-font-weight: 465;
+    --bg-color: #000000;
+    --accent-color: #00CC14;
+    --bg-image: repeating-linear-gradient(90deg, #000000 0px 2px, rgba(0 0 0 / .0) 2px 4px),
+            repeating-linear-gradient(#000000 0px 2px, rgba(0 0 0 / .0) 2px 4px),
+            linear-gradient(#007f0c, #004306);
+    --button-color: #00cc14;
+}
+  
+:root.theme-light {
+    --card-title-font-weight: 700;
+    --card-text-font-weight: 400;
+    --bg-color: #FFFFFF;
+    --accent-color: #000000;
+    --bg-image: repeating-linear-gradient(90deg, #d3d3d3 0px 2px, rgba(0 0 0 / .0) 2px 4px),
+            repeating-linear-gradient(#d3d3d3 0px 2px, rgba(0 0 0 / .0) 2px 4px),
+            linear-gradient(#e7e7e7 0px calc(0.01 * 100vh), #1a1a1a);
+    --button-color: #fff;
+}
