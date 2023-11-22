@@ -266,7 +266,7 @@ button:focus {
   align-items: center;
 }
 
-.button-text {
+.button__text {
   font-family: var(--accent-font-name);
   font-size: 14px;
   color: var(--button-color);
