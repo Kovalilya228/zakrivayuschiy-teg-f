@@ -252,6 +252,10 @@ button:focus {
   outline: none;
 }
 
+button {
+  cursor: pointer;
+}
+
 .button:focus-visible {
   box-shadow: 2px 2px 0px 0px var(--accent-color);
   transition: box-shadow 0.3s;
