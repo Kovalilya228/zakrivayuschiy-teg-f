@@ -221,7 +221,7 @@ p:not(:last-of-type).card__description {
 }
 
 .card__icon-button:focus-visible {
-  outline: 2px solid var(--accent-color); 
+  outline: 2px solid var(--accent-color);
   transition: outline 0.3s ease;
 }
 
