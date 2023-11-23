@@ -208,7 +208,6 @@ p:not(:last-of-type).card__description {
 .like-buttons {
   display: grid;
   grid-template-columns: 2fr min-content min-content;
-
 }
 
 .card__icon-button {
@@ -219,6 +218,11 @@ p:not(:last-of-type).card__description {
   grid-column-start: 2;
   background-color: transparent;
   border: none;
+}
+
+.card__icon-button:focus-visible {
+  outline: 2px solid var(--accent-color); 
+  transition: outline 0.3s ease;
 }
 
 .like-icon {
